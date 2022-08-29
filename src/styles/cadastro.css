@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background: rgb(18, 1, 45);
+    background: linear-gradient(144deg, rgba(18, 1, 45, 1) 4%, rgba(7, 1, 48, 1) 10%, rgba(9, 2, 75, 1) 17%, rgba(3, 4, 94, 1) 25%, rgba(2, 23, 109, 1) 32%, rgba(2, 39, 121, 1) 38%, rgba(2, 62, 138, 1) 43%, rgba(0, 119, 182, 1) 53%, rgba(0, 150, 199, 1) 64%, rgba(0, 180, 216, 1) 72%, rgba(72, 202, 228, 1) 79%, rgba(144, 224, 239, 1) 87%, rgba(173, 232, 244, 1) 94%, rgba(202, 240, 248, 1) 100%);
+    animation: colors 15s ease infinite;
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
+    background-size: 300% 300%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+form {
+    width: 80%;
+    height: auto;
+    max-width: 334px;
+    max-height: 454px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(100, 148, 237, 0.247);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px black;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    height: 16%;
+    max-width: 297px;
+    max-height: 49px;
+    margin: 10px 20px;
+    padding: 13px;
+    size: 15px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    border: 1px solid #454D6B;
+    border-radius: 10px;
+}
+
+#btn {
+    max-width: 152px;
+    max-height: 38px;
+    margin: 15px auto 30px;
+    background-color: rgba(100, 148, 237, 0);
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: 0.5s all ease;
+    text-align: center;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.cadastroError-Senha{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: normal;
+    color: #ff0000;
+    text-shadow: 0 0 4px black;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    display: none;
+
+}
+
+.Error-TodosOsCampos{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: normal;
+    color: #ff0000;
+    text-shadow: 0 0 4px black;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    display: none;
+
+}
+
+.d-block{
+    display: block;
+}
+
+
+
+@media (min-width: 769px) {
+    #btn {
+        color: #ffffffad;
+    }
+
+    #btn:hover {
+        /* border: 1px solid #FFFFFF; */
+        background-color: #FFFFFF;
+        color: rgba(0, 0, 0, 0.795);
+        border: none;
+    }
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+        background-position: 50% 100%;
+
+    }
+
+    100% {
+        background-position: 0% 50%;
+
+    }
+}

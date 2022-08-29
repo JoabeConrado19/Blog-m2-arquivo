@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Blog</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body onload="RenderizarRequest.Redirecionando()">
+    <header>
+        <div class="container">
+            <div class="header-user-container">
+                <!-- <div class="header-pic-container">
+                <img class="header-profile-pic" src="https://pbs.twimg.com/media/DaUamWNX0AAxLKy.jpg" alt="">
+                </div>
+                <h2>Gatinho fofo</h2> -->
+            </div>
+            <button class="header-button" href="#">Logout</button>
+        </div>        
+    </header>
+
+    <main>
+        <div class="post-maker-container">
+            <div class="postmaker">
+                <input type="text" placeholder="No que está pensando?">
+                <button class="post-button" type = "button">Postar</button>
+            </div>
+        </div>
+
+        <div class="post-container">
+            <ul class="post-container-ul">
+
+            </ul>
+        </div>
+
+        <div class="edit-box-container">
+            <div class="edit-box">
+                <h2 class="Modal-h2">Editar</h2>
+                <input type="text" placeholder="Escreva a sua mensagem..." id="edit-input" required>
+                <button class="edit-button">Enviar</button>
+            </div>
+        </div>
+
+        <div class="remove-box-container">
+            <div class="remove-box">
+                <h2 class="Modal-h2">Deseja deletar esse poster?</h2>
+                <button class="remove-btn">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/src/scripts/Renderizar.js"></script>
+    <script src="/src/scripts/Header.js"></script>
+
+</body>
+</html>
